@@ -1,4 +1,6 @@
 /*
+* Licensed under The MIT License (MIT).
+*
 * StaticMap4OSM
 *
 * Copyright (c) 2014 Tim Siebigteroth
