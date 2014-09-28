@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>StaticMap4OSM</title>
+<script type="text/javascript" src="staticmap4osm.js"></script>
+<script type="text/javascript">
+var smap=new StaticMap4OSM(); //create new StaticMap object with default parameters
+var canvas=smap.getCanvas(40.713698,-74.005469,12); //first two parameters are the center of the map; last one is the zoom level
+</script>
+</head>
+<body>
+<h1>StaticMap4OSM</h1>
+<p>StaticMap4OSM is a javascript library, which creates a static canvas image based on an OpenStreetMap like layer.<br>
+Licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">The MIT License (MIT)</a>. Copyright © 2014 Tim Siebigteroth.<br>
+Don't forget to add a copyright notice for the used layer (see demo)!</p>
+<hr>
+<h3>demo:</h3>
+<script type="text/javascript">
+document.body.appendChild(canvas); //add canvas to DOM
+</script>
+tiles © <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors
+<hr>
+<h3>how to:</h3>
+<p>var smap=new StaticMap(); <i>//create new StaticMap object with default parameters</i><br>
+var canvas=smap.getCanvas(40.713698,-74.005469,12); <i>//first two parameters are the center of the map; last one is the zoom level</i><br>
+document.body.appendChild(canvas); <i>//add canvas to DOM</i></p>
+<hr>
+<h3>default parameters:</h3>
+<p>var smap=new StaticMap4OSM({<br>
+&nbsp;&nbsp;&nbsp;size:256, <i>//tile size (width and height)</i><br>
+&nbsp;&nbsp;&nbsp;url:'http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', <i>//layer url</i><br>
+&nbsp;&nbsp;&nbsp;maxZoom:18 <i>//layer's max zoom level</i><br>
+});</p>
+</body>
+</html>
