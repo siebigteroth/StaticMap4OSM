@@ -3,6 +3,8 @@ StaticMap4OSM
 
 StaticMap4OSM is a javascript library, which creates a static canvas image based on an OpenStreetMap like layer.
 
+Demo: https://rawgit.com/siebigteroth/StaticMap4OSM/master/demo.html
+
 ####how to:
 ```
 var smap=new StaticMap(); //create new StaticMap object with default parameters
